@@ -1,0 +1,9 @@
+<div class="formContainer">
+    <h1>What is your name</h1>
+    <div class="name">
+        <input type="text" name="name" [(ngModel)]="firstName" placeholder="-Type here-">
+    </div>
+    <div class="btnContainer">
+        <button class="submitBtn" (click)="submitBtn()" [disabled]="firstName ==''">Next</button>
+    </div>
+</div>

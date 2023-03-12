@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="rowContainer">
+        <h1>Hello {{updateUserInfo.firstName}}!</h1>
+        <p>Choose your avatar</p>
+    </div>
+
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col" *ngFor="let image of images" [ngClass]="{'selected': image.selected}"
+                (click)="selectImage(image)">
+                <img [src]="image.src" alt="Image">
+            </div>
+        </div>
+        <button class="submitBtn" (click)="next()" [disabled]="!isImageSelected">Next</button>
+
+    </div>
+</div>

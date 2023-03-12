@@ -1,0 +1,34 @@
+.formContainer {
+    text-align: center;
+    padding: 30px;
+}
+
+input {
+    height: 45px;
+    width: 300px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#141923, #141923) padding-box, linear-gradient(to right, #7b72cc, #dc0078, #3871d6) border-box;
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+button {
+    background: linear-gradient(#141923, #141923) padding-box, linear-gradient(to right, #7b72cc, #dc0078, #3871d6) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+    color: #fff;
+    min-width: 100px;
+    padding: 8px 24px;
+    margin-top: 24px;
+}
+
+button:disabled {
+    background: #3a3a3a;
+    color: #9e9e9e;
+    border-radius: 50em;
+    border: 2px solid #fff;
+    padding: 8px 24px;
+    margin-top: 24px;
+
+}
