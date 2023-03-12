@@ -1,0 +1,23 @@
+<div class="container text-center">
+    <div class="row align-items-start">
+        <div class="col" id="img">
+            <img [src]="selectedImage" alt="Selected Image">
+        </div>
+        <div class="col" style="margin-top: 90px;margin-right: 65px; ">
+            <h3>{{updateUserInfo.firstName}}</h3>
+        </div>
+    </div>
+    <div class="formContainer">
+        <div class="name">
+            <input type="text" name="name" placeholder="-Room name-" #inputOne
+                (input)="submitButton.disabled = !(inputOne.value && inputTwo.value)">
+        </div>
+        <div class="name" style="margin: 20px;">
+            <input type="number" max="5" oninput="if (this.value > 5) this.value = 5" placeholder="-No of players-"
+                #inputTwo (input)="submitButton.disabled = !(inputOne.value && inputTwo.value)">
+        </div>
+        <div class="btnContainer">
+            <button class="submitBtn" (click)="generateRandomNumber()" #submitButton disabled>Next</button>
+        </div>
+    </div>
+</div>
